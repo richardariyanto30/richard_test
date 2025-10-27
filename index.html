@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halo Dunia dari Richard</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      text-align: center;
-      padding-top: 100px;
-    }
-    h1 {
-      color: #2b7a78;
-    }
-    p {
-      color: #17252a;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GameStore — Jual Game PC</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Selamat Datang di Repository richard_test 🚀</h1>
-  <p>Ini adalah file HTML pertama kamu di GitHub.</p>
-  <p>Semoga perjalanan belajarmu bersama Git dan GitHub menyenangkan!</p>
+  <header class="site-header">
+    <h1>GameStore</h1>
+    <nav>
+      <a href="#store">Toko</a>
+      <a href="#cart">Keranjang (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="store" class="store"></section>
+
+    <section id="cart" class="cart">
+      <h2>Keranjang</h2>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> GameStore — Demo</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
